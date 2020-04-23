@@ -11,3 +11,4 @@ Once the program runs you can not add, press or pull bets. This is only to simul
 betting the same bets on the inside numbers on every throw. 
 
 Feel free to add to the code base to allow other features of the game.
+jfjfjfjfjfjffjfjfjf
