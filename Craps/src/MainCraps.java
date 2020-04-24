@@ -3,7 +3,7 @@
 public class MainCraps {
 	
 	static String done = "good";
-	static int bankroll = 500; ////<---- ENTER BANKROLL YOU WISH TO START WITH
+	static int bankroll = 300; ////<---- ENTER BANKROLL YOU WISH TO START WITH
 		
 	static int six= 30; /// <-----Choose Place bets for 6 and 8
 	
@@ -40,6 +40,50 @@ public class MainCraps {
 		      
 		}
 		
+		public static String sayings(int point) {
+			
+			String callout;
+			
+			switch (point) {
+			
+			case 7:
+				callout = "SEVEN OUT";
+				break;
+			case 4:
+				callout = "Fooooourr";
+				break;
+			case 10:
+				callout = "TEN, EASY TEN";
+				break;
+			case 5:
+				callout = "FIVE NO FIELD FIVE";
+				break;
+			case 6:
+				callout ="SIX HARD SIX";
+				break;
+			case 8:
+				callout ="EIGHT!!!!!!";
+				break;
+			case 9:
+				callout ="NINE CENTER FIELD NINE";
+				break;
+			case 3:
+			case 12:
+			case 2:
+				callout = point + "CRAP";
+				break;
+			default:
+				callout = "NO ROLL DICE OUT";
+				
+			
+			}
+			
+			return callout;
+				
+			
+			
+		}
+		
 		public static void pointset(int point) {
 			
 		
@@ -50,22 +94,24 @@ public class MainCraps {
 				
 				if(num == 7 ) {
 					
-					
+					System.out.println(sayings(num));
 					//System.out.println(num);
-					System.out.println("7 out!!!!!");
+					//System.out.println("7 out!!!!!");
 					System.out.println("Your Final Bankroll is "+ bankroll);
 					done="crap";
 					break;
 				}else if (num==point) {
 					
-					
+					System.out.println(sayings(num));
 					System.out.println(num+ " point made nice job");
 					
 					break;
 				}else {
 					
-					System.out.println("roll is " +num);
+					System.out.println(sayings(num));
 				}
+				
+				
 				
 			}
 		}
@@ -95,10 +141,8 @@ public class MainCraps {
 				//System.out.println("+15");
 				payout = (five*3)/2;  //// <--- Pay out is 3 to 2 odds for 5 and 9
 				bankroll = bankroll + 15;
-			}else {
-				
-				System.out.println("no money won");
 			}
+			
 			
 		}
 		
