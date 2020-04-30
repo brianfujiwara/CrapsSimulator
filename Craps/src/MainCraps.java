@@ -1,5 +1,5 @@
 //brian's craps game
-
+//sideshooter committ testing
 public class MainCraps {
 	
 	static String done = "good";
