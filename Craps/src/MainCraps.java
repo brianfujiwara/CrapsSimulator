@@ -1,4 +1,4 @@
-//brian' craps game
+//brian's craps game
 
 public class MainCraps {
 	
