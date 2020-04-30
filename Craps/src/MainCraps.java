@@ -2,6 +2,8 @@
 
 public class MainCraps {
 	
+	
+	
 	static String done = "good";
 	static int bankroll = 300; ////<---- ENTER BANKROLL YOU WISH TO START WITH
 		
