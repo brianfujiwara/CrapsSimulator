@@ -1,3 +1,3 @@
-pulbic class dealer{
+public class dealer{
 
 }
